@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #16A34A;
+  --color-primary-dark: #15803D;
+  --color-accent: #D97706;
+  --color-bg: #F9FAFB;
+  --color-border: #E5E7EB;
+  --color-text: #111827;
+  --color-muted: #6B7280;
+  --color-error: #DC2626;
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-accent: var(--color-accent);
+  --color-bg: var(--color-bg);
+  --color-border: var(--color-border);
+  --color-text: var(--color-text);
+  --color-muted: var(--color-muted);
+  --color-error: var(--color-error);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* React Phone Number Input Overrides */
+.PhoneInputInput {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: 8px;
+  color: var(--color-text);
+  font-size: 1rem;
+}
+.PhoneInputCountry {
+  padding-right: 8px;
+  border-right: 1px solid var(--color-border);
+}
+
+.hide-scrollbar, .no-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar, .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
